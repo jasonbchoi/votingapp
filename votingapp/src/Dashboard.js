@@ -2,7 +2,7 @@ import React from 'react';
 import './CSS/Dashboard.css'
 function Dashboard(props) {
 	const handleClick = (index) => {
-		props.goToCandidate(index);
+		props.goToCandidate(parseInt(index, 10));
 	}
 	return (
 		<div>
